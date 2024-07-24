@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>First_Project</display-name>
+
+
+    <servlet>
+        <servlet-name>basicRegisterServlet</servlet-name>
+        <servlet-class>com.servlet.BasicRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>advanceRegisterServlet</servlet-name>
+        <servlet-class>com.servlet.AdvanceRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>basicRegisterServlet</servlet-name>
+        <url-pattern>/basicRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>advanceRegisterServlet</servlet-name>
+        <url-pattern>/advanceRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>Register1.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
+  
+  
+  
